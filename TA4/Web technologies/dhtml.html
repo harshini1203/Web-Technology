@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <title>DHTML</title>
+<head>
+    <title>Color Changing Button - DHTML</title>
+    <style>
+        .color-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a button that changes colour upon clicking.</h1>
+    <h3>Its styled and defined using DHTML - CSS and Javascript</h3>
+    <button class="color-button" onclick="changeColor()">Click Me</button>
+    <script>
+        function changeColor() {
+            var button = document.querySelector('.color-button');
+            var currentColor = button.style.backgroundColor;
+            if (currentColor === 'blue') {
+                button.style.backgroundColor = 'green';
+            } else{
+                button.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
